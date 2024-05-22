@@ -35,8 +35,8 @@ Welcome to the Flight Simulator project! This project is a sophisticated flight 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/flight-simulator.git
-   cd flight-simulator
+   git clone https://github.com/pawelledwon/Plane-simulator.git
+   cd Plane-simulator
 2. **Open the Project in Unity**
 
 - Launch Unity Hub.
