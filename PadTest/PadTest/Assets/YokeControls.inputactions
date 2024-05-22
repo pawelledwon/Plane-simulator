@@ -1,0 +1,74 @@
+{
+    "name": "YokeControls",
+    "maps": [
+        {
+            "name": "Airplane",
+            "id": "30fcbcc9-5da1-46ca-a8f1-8e70a9197904",
+            "actions": [
+                {
+                    "name": "LeftX",
+                    "type": "PassThrough",
+                    "id": "2f0d8bc2-5f55-4d4c-981a-69821bbe1e87",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftY",
+                    "type": "PassThrough",
+                    "id": "5e1ac207-a563-4d14-9fc7-d47226f42fa2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightX",
+                    "type": "PassThrough",
+                    "id": "353b872b-fe1d-4644-80b9-79f34248a9c2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d08ee8aa-3edf-4fd1-9013-1b8cd95f8046",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f74c2736-6fc4-48ff-a8c5-8fc276656856",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e1aee66-d910-4a53-9822-8fcb5bfba48b",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

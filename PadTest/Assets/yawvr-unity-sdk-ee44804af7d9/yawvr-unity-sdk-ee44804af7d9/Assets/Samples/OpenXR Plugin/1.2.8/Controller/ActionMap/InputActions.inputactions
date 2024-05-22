@@ -1,0 +1,206 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "HMD",
+            "id": "21d522e0-0295-43ef-b60a-3b355794717b",
+            "actions": [
+                {
+                    "name": "hmdPosition",
+                    "type": "Value",
+                    "id": "36a3121d-efce-478c-867c-a8d354777b78",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "hmdRotation",
+                    "type": "Value",
+                    "id": "4e56a29d-b0cc-42fd-a087-552950afac95",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "08f50b61-5d92-42ac-bdb9-b898a4f0d4a7",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "hmdPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09769104-56ee-4fae-9065-07f530388e75",
+                    "path": "<XRHMD>/centerEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "hmdRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "a725e4f4-1262-4d6f-8a52-b8ba368d4c82",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "7d87f920-38ab-4a79-9716-27722a02c594",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "pointerPosition",
+                    "type": "PassThrough",
+                    "id": "3e8f3014-2311-4c71-9a89-6fffe0d7ae05",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "pointerRotation",
+                    "type": "PassThrough",
+                    "id": "fff59030-bd11-46a7-96d3-35f8e50a86ca",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "78d62036-f819-477f-ba34-5041450a668f",
+                    "path": "<XRController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR Usage",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc05f8fe-0a9a-49ec-84a5-01ccef667093",
+                    "path": "<XRController>/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pointerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "047b05df-5df2-4fcf-81d7-a51f39906c16",
+                    "path": "<XRController>/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pointerRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Avatar",
+            "id": "976965fd-2f40-4f57-8309-e147749263b7",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "f4bbd447-2ddd-4909-b0f2-366a0dc0bf8a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "d6a5fc2d-9348-46ac-a223-0840fa1ae17f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "b150c830-d87a-43b6-9213-a27da284172a",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "68ae49cf-7076-43b5-bdd5-82a578a3fe78",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/y",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "eee8d3b1-6cf9-4fa4-8e99-08c814152a38",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "be9be079-d21e-49b8-a478-93faea3d0c5c",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XR Usage",
+            "bindingGroup": "XR Usage",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
