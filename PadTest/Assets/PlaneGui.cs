@@ -16,6 +16,6 @@ public class PlaneGui : AirplaneInput
     // Update is called once per frame
     void Update()
     {
-        textMode.text = "Mode: " + playerInput.currentControlScheme;
+        //textMode.text = "Mode: " + playerInput.currentControlScheme;
     }
 }
